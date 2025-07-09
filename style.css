@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto";
+    padding: 0;
+    list-style: none;
+    font-size: 1rem;
+}
+
+:root {
+    --grass:#49d0b0;
+    --fire:#fd6e6e;
+    --water:#76c0ff;
+    --bug:#98BF27;
+    --dark:#5A5565;
+    --dragon:#0470BB;
+    --electric:#F3D549;
+    --fairy:#EB94E1;
+    --fighting:#D0406A;
+    --flying:#91ABDD;
+    --ghost:#7773D2;
+    --ground:#D77A4A;
+    --ice:#7DCAC0;
+    --normal:#959BA0;
+    --poison:#A265C7;
+    --psychic:#FA6E72;
+    --rock:#C7B78C;
+    --steel:#55889E;
+}
+
+main {
+    padding: 1.5rem;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.name,.type{
+    text-transform: capitalize;
+}
+
+.pokemons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.7rem;
+    color: white;
+}
+
+.pokemons .pokemon {
+    flex-basis: 200px;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grass{
+    background-color: var(--grass);
+}
+
+.fire{
+    background-color: var(--fire);
+}
+
+.water{
+    background-color: var(--water);
+}
+
+.bug{
+    background-color: var(--bug);
+}
+
+.dark {
+    background-color: var(--dark)
+}
+.dragon{
+    background-color: var(--dragon);
+}
+
+.steel{
+    background-color: var(--steel);
+}
+
+.electric{
+    background-color: var(--electric);
+}
+
+.fairy{
+    background-color: var(--fairy);
+}
+
+.flying{
+    background-color: var(--flying);
+}
+
+.ghost{
+    background-color: var(--ghost);
+}
+
+.ground{
+    background-color: var(--ground);
+}
+
+.fighting{
+    background-color: var(--fighting);
+}
+
+.normal{
+    background-color: var(--normal);
+}
+
+.poison{
+    background-color: var(--poison);
+}
+
+.rock{
+    background-color: var(--rock);
+}
+
+.psychic{
+    background-color: var(--psychic);
+}
+
+.ice {
+    background-color: var(--ice);
+}
+
+.pokemons .pokemon section {
+    display: flex;
+    flex-direction: column;
+}
+
+.types {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.type {
+    width: 5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid;
+    filter: brightness(0.9);
+}
+
+.number {
+    text-align: right;
+}
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+}
+
+.paginacao button {
+    padding: 10px;
+    border-radius: 2rem;
+    background-color: #6A79D6;
+    color: white;
+    font-size: 1.2rem;
+}
