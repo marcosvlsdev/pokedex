@@ -1,5 +1,6 @@
 let offset = 0
 const limit = 12
+const maxOffSet = 807
 const pokemons = document.getElementById("pokemons")
 const loadMoreButton = document.getElementById('loadMore')
 
@@ -27,7 +28,15 @@ loadPokemons(offset, limit)
 
 loadMoreButton.addEventListener("click", () => {
     offset+=limit
-    loadPokemons(offset,limit)
+    const maxOffSetNextPage = offset + limit
+    if(maxOffSetNextPage >= maxOffSet){
+        let newLimit = maxOffSet - offset
+        loadPokemons(offset, newLimit)
+        loadMoreButton.parentElement.removeChild(loadMoreButton)
+    } else {
+        loadPokemons(offset,limit)
+    }
+    
 })
 
 
