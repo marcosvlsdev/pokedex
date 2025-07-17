@@ -1,0 +1,22 @@
+main {
+    color: white;
+}
+
+.name {
+    font-size: 2em;
+}
+
+.types {
+    flex-direction: row;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+}

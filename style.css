@@ -6,11 +6,12 @@
     padding: 0;
     list-style: none;
     font-size: 1rem;
+    text-decoration: none;
 }
 
 :root {
-    --grass:#49d0b0;
-    --fire:#fd6e6e;
+    --grass:#5DBD64;
+    --fire:#FEA44A;
     --water:#76c0ff;
     --bug:#98BF27;
     --dark:#5A5565;
@@ -51,14 +52,16 @@ h1 {
 
 .pokemons .pokemon {
     flex-basis: 200px;
+    height: 150px;
     padding: 0.5rem;
     border-radius: 1rem;
     display: flex;
     justify-content: space-between;
+    color: white;
 }
 
 .pokemon:hover img {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: .2s;
 }
 
@@ -147,7 +150,7 @@ h1 {
 .type {
     width: 5rem;
     padding: 0.5rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
     border: 1px solid;
     filter: brightness(0.9);
 }
